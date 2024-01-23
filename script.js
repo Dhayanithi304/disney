@@ -18,20 +18,19 @@ async function sampleFunction() {
       btnDiv.append(btn);
       leftDiv.append(btnDiv);
       
-      let b = details.imageUrl;
+      const imgUrl = details.imageUrl;
 
       // button function for display details
       btn.addEventListener("click", displayDetails);
       function displayDetails() {
         const a = btn.innerText;
-        const bodyDiv = document.getElementById("bodyDiv");
-        const leftDiv = document.getElementById("leftDiv");
-        const rightDiv = document.getElementById("rightDiv");
         const h1 = document.getElementById("h1");
         const img = document.getElementById("img");
         h1.innerText = a;
-        img.setAttribute("src",b);
-        
+        img.setAttribute("src",imgUrl);
+        const leftDiv = document.getElementById("leftDiv");
+        const rightDiv = document.getElementById("rightDiv");
+      
         leftDiv.classList.remove("leftDiv");
         leftDiv.classList.add("btnOpened");
         rightDiv.classList.add("rightDiv");
