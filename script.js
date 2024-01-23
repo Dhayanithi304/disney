@@ -7,14 +7,14 @@ async function sampleFunction() {
     for (details of data) {
       console.log(details);
       const bodyDiv = document.getElementById("bodyDiv");
-      const div2 = document.createElement("div");
-      const div3 = document.createElement("div");
+      const leftDiv = document.createElement("div");
+      const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
-      btn.classList.add("btn", "btn-primary", "btn");
+      btn.classList.add("btn", "btn-primary");
       btn.innerText = details.name;
-      div3.append(btn);
-      div2.append(div3)
-      div1.append(div2);
+      btnDiv.append(btn);
+      leftDiv.append(btnDiv);
+      bodyDiv.append(leftDiv);
       
       let b = details.imageUrl;
 
@@ -22,12 +22,14 @@ async function sampleFunction() {
       btn.addEventListener("click", displayDetails);
       function displayDetails() {
         const a = btn.innerText;
-        const div1 = document.getElementById("div1");
-        const div2 = document.createElement("div");
-          div2.classList.add("btnOpened");
+        const bodyDiv = document.getElementById("bodyDiv");
+        const leftDiv = document.createElement("div");
+        //const div1 = document.getElementById("div1");
+        //const div2 = document.createElement("div");
+          leftDiv.classList.add("btnOpened");
        // document.getElementById("container").style.display = "none";
         
-        const div4 = `
+        const rightDiv = `
               <div>
                 <h1 id="head-text">${a}</h1>
                 <img src="${b}">
@@ -36,7 +38,7 @@ async function sampleFunction() {
         `;
         // const div_a = document.createElement("div");
         // div_a.classList.add("container");
-        div1.insertAdjacentHTML("beforeend", div4);
+        bodyDiv.insertAdjacentHTML("beforeend", rightDiv);
 
         // const div_b = document.createElement("div");
         // const h1 = document.createElement("h1");
