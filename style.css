@@ -26,9 +26,16 @@
 .hidden{
     display: none;
 }
+.btnOpened{
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .divclass img{
     width: 200px;
     /* height: 400px; */
     overflow: hidden;
+}
+.openedDiv{
+  display : flex;
+  flex-diraction: column;
 }
