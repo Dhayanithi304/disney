@@ -10,7 +10,7 @@ async function sampleFunction() {
       const leftDiv = document.getElementById("leftDiv");
       const rightDiv = document.getElementById("rightDiv");
       //rightDiv.classList.add("hidden");
-      rightDiv.style.display= "none";
+     // rightDiv.style.display= "none";
       const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
       btn.classList.add("btn", "btn-primary");
@@ -30,7 +30,7 @@ async function sampleFunction() {
 
         leftDiv.classList.remove("leftDiv");
         leftDiv.classList.add("btnOpened");
-        rightDiv.style.display= "inlne-block";
+       // rightDiv.style.display= "inlne-block";
 
        // document.getElementById("container").style.display = "none";
         
