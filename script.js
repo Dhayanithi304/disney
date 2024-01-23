@@ -6,7 +6,7 @@ async function sampleFunction() {
     const data = res2.data;
     for (details of data) {
       console.log(details);
-      const div1 = document.getElementById("div1");
+      const bodyDiv = document.getElementById("bodyDiv");
       const div2 = document.createElement("div");
       const div3 = document.createElement("div");
       const btn = document.createElement("buttton");
