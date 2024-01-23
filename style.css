@@ -1,9 +1,8 @@
-#leftDiv {
+.leftDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   text-align: center;
-  background: red;
 }
 .d {
   margin: 20px;
@@ -28,7 +27,10 @@
     display: none;
 }
 .btnOpened{
-  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
 }
 #bodyDiv{
   display: flex;  
