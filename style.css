@@ -4,6 +4,9 @@
   gap: 20px;
   text-align: center;
 }
+.rightDiv{
+  width:300px;
+}
 .d {
   margin: 20px;
   width: 300px;
