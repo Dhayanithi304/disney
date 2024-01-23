@@ -1,7 +1,7 @@
 .leftDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 10%;
   text-align: center;
 }
 .rightDiv{
@@ -12,7 +12,6 @@
 }
 #rightDiv{
   display: flex;
-  flex-direction: column;
 }
 .d {
   margin: 20px;
@@ -41,7 +40,7 @@
 .btnOpened{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 10%;
   text-align: center;
 }
 #bodyDiv{
