@@ -8,11 +8,14 @@ async function sampleFunction() {
       console.log(details);
       const div1 = document.getElementById("div1");
       const div2 = document.createElement("div");
+      const div3 = document.createElement("div");
       const btn = document.createElement("buttton");
       btn.classList.add("btn", "btn-primary", "btn");
       btn.innerText = details.name;
-      div2.append(btn);
+      div3.append(btn);
+      div2.append(div3)
       div1.append(div2);
+      
       let b = details.imageUrl;
 
       // button function for display details
@@ -20,11 +23,11 @@ async function sampleFunction() {
       function displayDetails() {
         const a = btn.innerText;
         const div1 = document.getElementById("div1");
-          div1.classList.add("btnOpened");
+        const div2 = document.createElement("div");
+          div2.classList.add("btnOpened");
        // document.getElementById("container").style.display = "none";
-        const container = document.getElementById("container");
-        container.classList.add('openedDiv');
-        const div2 = `
+        
+        const div4 = `
               <div>
                 <h1 id="head-text">${a}</h1>
                 <img src="${b}">
@@ -33,7 +36,7 @@ async function sampleFunction() {
         `;
         // const div_a = document.createElement("div");
         // div_a.classList.add("container");
-        container.insertAdjacentHTML("beforeend", div2);
+        div1.insertAdjacentHTML("beforeend", div4);
 
         // const div_b = document.createElement("div");
         // const h1 = document.createElement("h1");
