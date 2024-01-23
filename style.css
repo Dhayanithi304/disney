@@ -29,6 +29,9 @@
 .btnOpened{
   grid-template-columns: repeat(2, 1fr);
 }
+#bodyDiv{
+  
+}
 
 .divclass img{
     width: 200px;
