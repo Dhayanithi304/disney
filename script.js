@@ -27,33 +27,17 @@ async function sampleFunction() {
         const bodyDiv = document.getElementById("bodyDiv");
         const leftDiv = document.getElementById("leftDiv");
         const rightDiv = document.getElementById("rightDiv");
-
+        const h1 = document.getElementById("h1");
+        const img = document.getElementById("img");
+        h1.innerText = a;
+        img.setAttribute("src",b);
+        
         leftDiv.classList.remove("leftDiv");
         leftDiv.classList.add("btnOpened");
+        rightDiv.classList.add("rightDiv");
        // rightDiv.style.display= "inlne-block";
-
-       // document.getElementById("container").style.display = "none";
         
-        const subDiv = `
-              <div>
-                <h1 id="head-text">${a}</h1>
-                <img src="${b}">
-                <p></p>
-              </div>
-        `;
-        // const div_a = document.createElement("div");
-        // div_a.classList.add("container");
-     //   rightDiv.insertAdjacentHTML("beforeend", subDiv);
-        rightDiv.append(subDiv);
-
-        // const div_b = document.createElement("div");
-        // const h1 = document.createElement("h1");
-        // h1.innerText = a;
-        // div_b.append(h1);
-        // div_a.append(div_b);
-        // const img = document.createElement('img');
-
-        // img.setAttribute("herf")
+        
       }
     }
   } catch (err) {
