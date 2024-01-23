@@ -8,6 +8,7 @@ async function sampleFunction() {
       console.log(details);
       const bodyDiv = document.getElementById("bodyDiv");
       const leftDiv = document.createElement("div");
+      leftDiv.setAttribute("id","leftDiv");
       const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
       btn.classList.add("btn", "btn-primary");
