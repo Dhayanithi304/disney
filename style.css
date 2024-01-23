@@ -12,6 +12,7 @@
 }
 #rightDiv{
   display: flex;
+  flex-direction: row;
 }
 .d {
   margin: 20px;
@@ -30,7 +31,7 @@
 }
 
 .btn{
-    width: 80%;   
+    width: 100%;   
    /* overflow: hidden;
     height:80%; */
 }
@@ -57,5 +58,6 @@
 }
 */
 .rightDiv button{
-  width :40px;
+  width :30px;
+  height:30px;
 }
