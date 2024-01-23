@@ -19,22 +19,21 @@ async function sampleFunction() {
       btn.addEventListener("click", displayDetails);
       function displayDetails() {
         const a = btn.innerText;
-
-        div1.classList.add("hidden");
-        document.getElementById("container").style.display = "none";
-
-        const div_a = `
-          <div class="container">
-            <div class="divclass">
-              <h1 id="head-text">${a}</h1>
-              <img src="${b}">
-              <p></p>
-            </div>
-          </div>
+        const div1 = document.getElementById("div1");
+          div1.classList.add("btnOpened");
+       // document.getElementById("container").style.display = "none";
+        const container = document.getElementById("container");
+        container.classList.add('openedDiv');
+        const div2 = `
+              <div>
+                <h1 id="head-text">${a}</h1>
+                <img src="${b}">
+                <p></p>
+              </div>
         `;
         // const div_a = document.createElement("div");
         // div_a.classList.add("container");
-        document.body.insertAdjacentHTML("beforeend", div_a);
+        container.insertAdjacentHTML("beforeend", div2);
 
         // const div_b = document.createElement("div");
         // const h1 = document.createElement("h1");
