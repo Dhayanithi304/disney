@@ -5,17 +5,18 @@ async function sampleFunction() {
     const res2 = await response.json();
     const data = res2.data;
     for (details of data) {
-      console.log(details);
+     // console.log(details);
       const bodyDiv = document.getElementById("bodyDiv");
-      const leftDiv = document.createElement("div");
-      leftDiv.setAttribute("id","leftDiv");
+      const leftDiv = document.getElementById("leftDiv");
+      const rightDiv = document.getElementById("rightDiv");
+      //rightDiv.classList.add("hidden");
+      rightDiv.style.display= "none";
       const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
       btn.classList.add("btn", "btn-primary");
       btn.innerText = details.name;
       btnDiv.append(btn);
       leftDiv.append(btnDiv);
-      bodyDiv.append(leftDiv);
       
       let b = details.imageUrl;
 
@@ -24,13 +25,15 @@ async function sampleFunction() {
       function displayDetails() {
         const a = btn.innerText;
         const bodyDiv = document.getElementById("bodyDiv");
-        const leftDiv = document.createElement("div");
-        //const div1 = document.getElementById("div1");
-        //const div2 = document.createElement("div");
-          leftDiv.classList.add("btnOpened");
+        const leftDiv = document.getElementById("leftDiv");
+        const rightDiv = document.getElementById("rightDiv");
+   
+        leftDiv.classList.add("btnOpened");
+        rightDiv.style.display= "inlne-block";
+
        // document.getElementById("container").style.display = "none";
         
-        const rightDiv = `
+        rightDiv.innerHTML = `
               <div>
                 <h1 id="head-text">${a}</h1>
                 <img src="${b}">
