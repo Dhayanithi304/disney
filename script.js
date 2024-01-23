@@ -9,8 +9,7 @@ async function sampleFunction() {
       const bodyDiv = document.getElementById("bodyDiv");
       const leftDiv = document.getElementById("leftDiv");
       const rightDiv = document.getElementById("rightDiv");
-      //rightDiv.classList.add("hidden");
-     // rightDiv.style.display= "none";
+      rightDiv.classList.add("hidden");
       const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
       btn.classList.add("btn", "btn-primary");
@@ -34,9 +33,7 @@ async function sampleFunction() {
         leftDiv.classList.remove("leftDiv");
         leftDiv.classList.add("btnOpened");
         rightDiv.classList.add("rightDiv");
-       // rightDiv.style.display= "inlne-block";
-        
-        
+        rightDiv.classList.remove("hidden");                
       }
     }
   } catch (err) {

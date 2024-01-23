@@ -1,16 +1,12 @@
 .leftDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 3%;
+  gap: 2%;  
   text-align: center;
 }
-.rightDiv{
-  margin-left:40px;
-  width:47%;
-  display: flex;
-  flex-direction: row;
-}
-#rightDiv{
+.rightDiv {
+  /* margin-left: 40px; */
+  width: 47%;
   display: flex;
   flex-direction: row;
 }
@@ -19,45 +15,37 @@
   width: 300px;
 }
 
-.headDiv{
+.headDiv {
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.head-text{
-    font-size: 30px;
+.head-text {
+  font-size: 30px;
 }
 
-.btn{
-    width: 100%;   
-   /* overflow: hidden;
-    height:80%; */
+.btn {
+  width: 100%;
+  overflow: hidden;
+  height: 80%;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-.btnOpened{
+
+.btnOpened {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2%;
   text-align: center;
 }
-#bodyDiv{
-  display: flex;  
-  flex-diraction: column;
+#bodyDiv {
+  display: flex;
+  flex-direction: row;
 }
-
-.divclass img{
-    width: 2rem;
-}
-/*.openedDiv{
-  display : flex;
-  flex-diraction: column;
-}
-*/
-.rightDiv button{
-  width :30px;
-  height:30px;
+.rightDiv button {
+  width: 30px;
+  height: 30px;
 }
