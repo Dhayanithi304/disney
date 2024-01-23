@@ -34,7 +34,7 @@ async function sampleFunction() {
 
        // document.getElementById("container").style.display = "none";
         
-        rightDiv.innerHTML = `
+        const subDiv = `
               <div>
                 <h1 id="head-text">${a}</h1>
                 <img src="${b}">
@@ -43,7 +43,7 @@ async function sampleFunction() {
         `;
         // const div_a = document.createElement("div");
         // div_a.classList.add("container");
-        // bodyDiv.insertAdjacentHTML("beforeend", rightDiv);
+        rightDiv.insertAdjacentHTML("beforeend", subDiv);
 
         // const div_b = document.createElement("div");
         // const h1 = document.createElement("h1");
