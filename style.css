@@ -1,4 +1,4 @@
-#div1 {
+#bodyDiv {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -9,7 +9,7 @@
   width: 300px;
 }
 
-.div {
+.headDiv{
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
