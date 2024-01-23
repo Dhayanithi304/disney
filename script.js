@@ -27,7 +27,8 @@ async function sampleFunction() {
         const bodyDiv = document.getElementById("bodyDiv");
         const leftDiv = document.getElementById("leftDiv");
         const rightDiv = document.getElementById("rightDiv");
-   
+
+        leftDiv.classList.remove("leftDiv");
         leftDiv.classList.add("btnOpened");
         rightDiv.style.display= "inlne-block";
 
@@ -42,7 +43,7 @@ async function sampleFunction() {
         `;
         // const div_a = document.createElement("div");
         // div_a.classList.add("container");
-        bodyDiv.insertAdjacentHTML("beforeend", rightDiv);
+        // bodyDiv.insertAdjacentHTML("beforeend", rightDiv);
 
         // const div_b = document.createElement("div");
         // const h1 = document.createElement("h1");
