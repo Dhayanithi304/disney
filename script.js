@@ -43,7 +43,8 @@ async function sampleFunction() {
         `;
         // const div_a = document.createElement("div");
         // div_a.classList.add("container");
-        rightDiv.insertAdjacentHTML("beforeend", subDiv);
+     //   rightDiv.insertAdjacentHTML("beforeend", subDiv);
+        rightDiv.append(subDiv);
 
         // const div_b = document.createElement("div");
         // const h1 = document.createElement("h1");
