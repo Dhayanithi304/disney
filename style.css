@@ -1,12 +1,12 @@
 .leftDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
   text-align: center;
 }
 .rightDiv{
-  padding:40px;
-  width:40%;
+  margin-right:40px;
+  width:47%;
 }
 .d {
   margin: 20px;
@@ -33,7 +33,7 @@
 .btnOpened{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
   text-align: center;
 }
 #bodyDiv{
@@ -42,9 +42,7 @@
 }
 
 .divclass img{
-    width: 200px;
-    /* height: 400px; */
-    overflow: hidden;
+    width: 2rem;
 }
 /*.openedDiv{
   display : flex;
