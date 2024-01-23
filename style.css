@@ -26,6 +26,8 @@
 
 .btn{
     width: 80%;   
+    overflow: hidden;
+    height:80%; 
 }
 .hidden{
     display: none;
