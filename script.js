@@ -11,13 +11,18 @@ async function sampleFunction() {
       const rightDiv = document.getElementById("rightDiv");
       const h1 = document.getElementById("h1");
       const img = document.getElementById("img");
-      // h1.classList.remove("hidden");
-       // img.classList.remove("hidden");
-        // p1.classList.remove("hidden");
-        // p2.classList.remove("hidden");
-        // p3.classList.remove("hidden");
-        // p4.classList.remove("hidden");
-        // btn.classList.add('hidden');
+      const p1 = document.getElementById('p1');
+        const p2 = document.getElementById('p2');
+        const p3 = document.getElementById('p3');
+        const p4 = document.getElementById('p4');
+        const btn = document.getElementById('closebtn');
+         h1.classList.add("hidden");
+         img.classList.add("hidden");
+         p1.classList.add("hidden");
+         p2.classList.add("hidden");
+         p3.classList.add("hidden");
+         p4.classList.add("hidden");
+         btn.classList.add("hidden");
       rightDiv.classList.add("hidden");
       const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
@@ -44,11 +49,7 @@ async function sampleFunction() {
         leftDiv.classList.add("btnOpened");
         rightDiv.classList.add("rightDiv");
         rightDiv.classList.remove("hidden");
-        const p1 = document.getElementById('p1');
-        const p2 = document.getElementById('p2');
-        const p3 = document.getElementById('p3');
-        const p4 = document.getElementById('p4');
-        const btn = document.getElementById('closebtn');
+        
         img.classList.remove("hidden");
         h1.classList.remove("hidden");
         p1.classList.remove("hidden");
