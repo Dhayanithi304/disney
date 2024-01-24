@@ -48,6 +48,7 @@ async function sampleFunction() {
         const p2 = document.getElementById('p2');
         const p3 = document.getElementById('p3');
         const p4 = document.getElementById('p4');
+        const btn = document.getElementById('closebtn');
         img.classList.remove("hidden");
         h1.classList.remove("hidden");
         p1.classList.remove("hidden");
