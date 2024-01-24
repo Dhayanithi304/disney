@@ -9,6 +9,15 @@ async function sampleFunction() {
       const bodyDiv = document.getElementById("bodyDiv");
       const leftDiv = document.getElementById("leftDiv");
       const rightDiv = document.getElementById("rightDiv");
+      const h1 = document.getElementById("h1");
+      const img = document.getElementById("img");
+      h1.classList.remove("hidden");
+        img.classList.remove("hidden");
+        // p1.classList.remove("hidden");
+        // p2.classList.remove("hidden");
+        // p3.classList.remove("hidden");
+        // p4.classList.remove("hidden");
+        // btn.classList.add('hidden');
       rightDiv.classList.add("hidden");
       const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
@@ -27,8 +36,6 @@ async function sampleFunction() {
       btn.addEventListener("click", displayDetails);
       function displayDetails() {
         const a = btn.innerText;
-        const h1 = document.getElementById("h1");
-        const img = document.getElementById("img");
         h1.innerText = a;
         img.setAttribute("src",imgUrl);
         const leftDiv = document.getElementById("leftDiv");
@@ -37,6 +44,8 @@ async function sampleFunction() {
         leftDiv.classList.add("btnOpened");
         rightDiv.classList.add("rightDiv");
         rightDiv.classList.remove("hidden");
+        img.classList.remove("hidden");
+        h1.classList.remove("hidden");
         const p1 = document.getElementById('p1');
         const p2 = document.getElementById('p2');
         const p3 = document.getElementById('p3');
@@ -53,6 +62,8 @@ async function sampleFunction() {
         leftDiv.classList.remove("btnOpened");
         rightDiv.classList.remove("rightDiv");
         rightDiv.classList.add("hidden");
+        h1.classList.add("hidden");
+        img.classList.add("hidden");
       }
 
     }

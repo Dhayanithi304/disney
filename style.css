@@ -10,6 +10,7 @@ body{
   text-align: center;
   justify-content: center;
   align-items: center;
+  transition: all 1s ease-in-out;
 }
 .rightDiv {
   margin-left: 30px;
@@ -19,6 +20,7 @@ body{
   padding: 15px;
   border: 1px solid  black;
   border-radius:20px ;
+  transition: all 1s ease-in-out;
 }
 .d {
   margin: 20px;
@@ -44,13 +46,16 @@ body{
 .btn {
 }
 .hidden {
-  display: none;
+  /* display: none; */
+  width: 0;
+  transition: all 1s ease-in-out;
 }
 
 .btnOpened {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 #bodyDiv {
   display: flex;
@@ -72,5 +77,5 @@ span{
   margin: 13px 0 ;
 }
 .right-content{
-  margin-left: 30px;
+  margin:0 30px;
 }
