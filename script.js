@@ -22,7 +22,7 @@ async function sampleFunction() {
          p2.classList.add("hidden");
          p3.classList.add("hidden");
          p4.classList.add("hidden");
-         btn2.classList.add("hidden");
+         btn2.classList.add("hidden2");
       rightDiv.classList.add("hidden");
       const btnDiv = document.createElement("div");
       const btn = document.createElement("buttton");
@@ -56,7 +56,7 @@ async function sampleFunction() {
         p2.classList.remove("hidden");
         p3.classList.remove("hidden");
         p4.classList.remove("hidden");
-        btn2.classList.remove('hidden');
+        btn2.classList.remove('hidden2');
      
         id.length  !== 0 ? p1.innerHTML =`ID: <span>${id}</span> ` : p1.innerHTML = ""; 
         filmName.length  !== 0 ? p2.innerHTML =`Films: <span>${filmName}</span> ` : p2.innerHTML = ""; 
@@ -76,7 +76,7 @@ async function sampleFunction() {
         p2.classList.add("hidden");
         p3.classList.add("hidden");
         p4.classList.add("hidden");
-        btn2.classList.add('hidden');
+        btn2.classList.add('hidden2');
       }
 
     }
